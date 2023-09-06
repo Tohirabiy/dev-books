@@ -1,0 +1,15 @@
+.card_as {
+    border-radius: 15px;
+    background-color: #191919;
+    width: 165px;
+    flex-shrink: 0;
+    height: 321px;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    }
+    .imgss {
+        width: 165px;
+        height: 246.23px;
+    }
+}

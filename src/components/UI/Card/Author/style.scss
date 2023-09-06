@@ -1,0 +1,16 @@
+.card_a {
+    border-radius: 15px;
+    background-color: #191919 ;
+     box-shadow: 0px 2.76726px 2.21381px 0px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px 0px rgba(0, 0, 0, 0.03),
+        0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px 22.33631px 17.86905px 0px rgba(0, 0, 0, 0.04),
+        0px 41.77761px 33.42209px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    width: 173.33px;
+    height: 236.743px;
+    flex-shrink: 0;
+    // background-image: url('../../../../assets/images/Vector.svg');
+&:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}    
+}

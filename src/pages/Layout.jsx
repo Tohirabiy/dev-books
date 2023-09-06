@@ -1,20 +1,19 @@
+// import { Footer } from "flowbite-react";
 import React from "react";
-import {Outlet} from "react-router-dom";
-import Header from "../components/Header"
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer"
 const Layout = () => {
-    return (
-        <div>
-                   <Header/>
+  return (
+    <div>
+      <Header />
 
-
-            {/* main routing <Outlet/> */}
-
-            {/* footer */}
-         <main className="min-h-screen">
-         <Outlet/>
-         </main>
-        </div>
-    );
+      <main className="m-h-screen">
+        <Outlet />
+      </main>
+      <Footer/>
+    </div>
+  );
 };
 
 export default Layout;
