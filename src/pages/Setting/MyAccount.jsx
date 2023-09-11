@@ -1,99 +1,61 @@
-import React from 'react';
-import { Button, Checkbox, Form, Input } from 'antd';
-const onFinish = (values) => {
-  console.log('Success:', values);
-};
-const onFinishFailed = (errorInfo) => {
-  console.log('Failed:', errorInfo);
-};
-import IMG from "../../assets/images/shoir.svg"
-const MyAccount = () => {
-    return (
-        <div className='flex'>
-            <div className="rasmlar"><img src={IMG}  alt="" /></div>
-            <div className="profile">
-                <h1>My profile</h1>
-                <ul><li><p>Ism</p>
-                </li>
-                <li><p>Sharif</p></li>
-                <div className="">
-                    <li><p>Telefon</p></li>
-                    <li><p>Email</p></li>
-                </div>
-                </ul>
-            </div>
-        </div>
-    );
-};
+import React from "react";
+import { Form, Input, Button } from "antd";
 
+import UploadImage from "../../components/UI/Upload/Upload";
+
+const MyAccount = () => {
+  const onFinish = (value) => {
+    console.log(value);
+  };
+  return (
+    <div className="container">
+           <div className="flex py-16 ">
+        <div className="avatar   w-[400px] p-4">
+          <UploadImage />
+        </div>
+
+        <div className="form grow">
+          <h1 className="text-2xl font-sans my-4">Mening sahifam</h1>
+          <Form name="form_item_path" layout="vertical" onFinish={onFinish}>
+         
+         <label htmlFor="name">
+          <p>Ismingiz</p>
+         <Input className=" mb-4 bg-[#F3F6F9] rounded-lg p-4 border-0" placeholder="Ismingiz" />
+
+         </label>
+         
+         
+
+<label htmlFor="lastname">
+  <p>Sharifingiz</p>
+<Input className=" mb-4 bg-[#F3F6F9] rounded-lg p-4 border-0" placeholder="Sharifingiz" />
+
+</label>
+         <div className="flex gap-x-[30px] ">  
+
+<label htmlFor="tel" className="grow">
+<p>Tel:</p>
+<Input type="tel" className=" mb-4 bg-[#F3F6F9] rounded-lg p-4 border-0" placeholder="Tel:" />   
+
+</label>
+<label htmlFor="email" className="grow">
+  <p>email</p>
+<Input type="email" className=" mb-4 bg-[#F3F6F9] rounded-lg p-4 border-0" placeholder="Enter first name" />
+  </label>          
+          </div>
+         
+
+         <div className="flex justify-between">
+          <span></span>
+          <Button className=" pb-[11px]  pl-[23px] pr-[26px] bg-[#152540] text-white"  htmlType="submit">
+              Saqlash
+            </Button>
+         </div>
+          </Form>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default MyAccount;
-
-
-
-//  <Form
-//     name="basic"
-//     labelCol={{
-//       span: 8,
-//     }}
-//     wrapperCol={{
-//       span: 16,
-//     }}
-//     style={{
-//       maxWidth: 600,
-//     }}
-//     initialValues={{
-//       remember: true,
-//     }}
-//     onFinish={onFinish}
-//     onFinishFailed={onFinishFailed}
-//     autoComplete="off"
-//   >
-//     <Form.Item
-//       label="Username"
-//       name="username"
-//       rules={[
-//         {
-//           required: true,
-//           message: 'Please input your username!',
-//         },
-//       ]}
-//     >
-//       <Input />
-//     </Form.Item>
-
-//     <Form.Item
-//       label="Password"
-//       name="password"
-//       rules={[
-//         {
-//           required: true,
-//           message: 'Please input your password!',
-//         },
-//       ]}
-//     >
-//       <Input.Password />
-//     </Form.Item>
-
-//     <Form.Item
-//       name="remember"
-//       valuePropName="checked"
-//       wrapperCol={{
-//         offset: 8,
-//         span: 16,
-//       }}
-//     >
-//       <Checkbox>Remember me</Checkbox>
-//     </Form.Item>
-
-//     <Form.Item
-//       wrapperCol={{
-//         offset: 8,
-//         span: 16,
-//       }}
-//     >
-//       <Button type="primary" htmlType="submit">
-//         Submit
-//       </Button>
-//     </Form.Item>
-//   </Form>

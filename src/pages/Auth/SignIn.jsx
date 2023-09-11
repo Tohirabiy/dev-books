@@ -19,7 +19,7 @@ const SignIn = () => (
     </div>
 
     <div className="item">
-      <h1>Sign in</h1>
+      <h1>Registrasiya</h1>
       <p>
         Siz ro'yhatdan o'tgansizmi? 
         <Link className="sane" to="/signup">
@@ -50,6 +50,7 @@ const SignIn = () => (
           rules={[
             {
               type: "email",
+              required: true,
 
               message: "Iltimos emailgizni kiriting!",
             },

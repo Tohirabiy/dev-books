@@ -4,6 +4,7 @@ import IMG from "../../assets/images/SignUp.png";
 import { Link } from "react-router-dom";
 import { Button, Checkbox, Form, Input } from "antd";
 import { TextInput } from "flowbite-react";
+// import useAuth
 
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -19,7 +20,7 @@ const SignUp = () => (
     </div>
 
     <div className="item">
-      <h1>Sign up</h1>
+      <h1>Ro'yhatdan otish</h1>
       <p>
         Avval ro'yhatdan o'tgan bolsangiz?
         <Link className="sane" to="/signin">
