@@ -22,7 +22,7 @@ const index = () => {
               return <CardAuthor />;
             })}
           </CardWrapper>
-          <CardWrapper>
+          <CardWrapper Wrapper>
             {"HELLOddWORLD".split("").map((item) => {
               return <CardBook />;
             })}

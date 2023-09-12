@@ -34,3 +34,7 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+.ant-btn-primary{
+  background-color: rgb(78, 78, 234) !important; 
+color: #ffff;
+}
