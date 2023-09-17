@@ -1,4 +1,3 @@
-
 import ReactDOM from 'react-dom/client'
 import Layout from './pages/Layout'
 import './index.css'
